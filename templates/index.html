@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Yard</title>
+    <style>
+        .container {
+            width: 800px;
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .square {
+            width: 150px;
+            height: 150px;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Welcome!</h2>
+    <div class="container">
+        {% for x in range(0,number): %} {% if color == "blue" %}
+        <div class="square" style="background-color: #9fc5f8"></div>
+        {% endif %} {% if color == "red" %}
+        <div class="square" style="background-color: crimson"></div>
+        {% endif %} {% if color == "green" %}
+        <div class="square" style="background-color: #93c47d"></div>
+        {% endif %} {% endfor %}
+    </div>
+</body>
+
+</html>
